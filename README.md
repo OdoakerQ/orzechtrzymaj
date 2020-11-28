@@ -6,9 +6,9 @@
 Jednym z problemów w dzisiejszych realiach jest znalezienie najlepszego sposobu na naukę zdalną.
 Nasz zespół ma zamiar stworzyć urządzenie, które poradzi sobie z tym trudnym zadaniem!
 
-**Amazonka-Express-Box** to urządzenie wspomagające skupienie uwagi studenta na zdalnych wykładach.
+**Amazonka-Express-Box** wspomaga skupienie uwagi studenta na zdalnych wykładach.
 
-Za pomocą kamery wbudowanej w urządzenie lub kamery zewnętrznej śledzi ono ruch gałek ocznych i wznosi denerwujący 
+Za pomocą kamery wbudowanej lub kamery zewnętrznej śledzi ono ruch gałek ocznych i wznosi drażniący 
 dla studenta alarm dźwiękowy. 
 
 ### Opis struktury projektu
