@@ -5,12 +5,13 @@ before_script:
   - apt-get install -y python3
   - apt-get install -y python3-pip
   - python3 -V
-  - pip3 install pytest
+  - pip3 install pytest pytest-cov
 
 test:
   script:
-    - python3 -m pytest --junitxml=./coverage/report.xml
+    - python3 -m pytest --cov=src/
+    - coverage xml
 
   artifacts:
       reports:
-        cobertura: coverage/report.xml
+        cobertura: coverage.xml
