@@ -40,3 +40,5 @@ git push origin develop-igor
 Go to Amazonka Express software [GitLab repository](https://gitlab-stud.elka.pw.edu.pl/ianczyko/amazonka-express-soft). And change branch from `main` to `develop-igor`.
 
 At the top you will find the button to create a merge request.
+
+If there is no button, create a Merge Request manually. To achieve this go to [Merge Requests](https://gitlab-stud.elka.pw.edu.pl/ianczyko/amazonka-express-soft/-/merge_requests) page, then tap on the `New merge request` button and choose `develop-igor` branch as source branch.
