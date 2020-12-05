@@ -1,5 +1,9 @@
 # amazonka-express-soft
 
+# Rysunek koncepcyjny
+<!-- ![doc/AmazonkaBoxV1.png](./doc/AmazonkaBoxV1.png) -->
+<img src="doc/AmazonkaBoxV1.png" alt="AmazonkaBoxV1.png"
+width="50%" />
 
 ## Opis projektu
 
