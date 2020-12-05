@@ -18,7 +18,9 @@ while(True):
     text = ""
 
     if gaze.pupils_located:
-        text = "TAKJESTXDDD"
+        text = "Eyes found"
+    else:
+        text = "Eyes 404"
 
     cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
 
