@@ -59,6 +59,7 @@ class GazeTracking(object):
         Arguments:
             frame (numpy.ndarray): The frame to analyze
         """
+        self.calibrate()
         self.frame = frame
         self._analyze()
 
@@ -131,3 +132,9 @@ class GazeTracking(object):
             cv2.line(frame, (x_right, y_right - 5), (x_right, y_right + 5), color)
 
         return frame
+
+    def calibrate(self):
+        """
+        Calibrate gaze_tracking
+        """
+        self.calibration = Calibration()

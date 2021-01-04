@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 
 MAX_FPS = cap.get(cv2.CAP_PROP_FPS)
 
-fps = 30
+fps = 10
 passed = float(0)
 prev = time.time()
 
@@ -19,7 +19,6 @@ while(True):
 
         # Capture frame-by-frame
         ret, frame = cap.read()
-
         gaze.refresh(frame)
 
         if gaze.pupils_located:
@@ -32,7 +31,7 @@ while(True):
 
 
         # Display the resulting frame
-        cv2.imshow('frame', frame)
+        cv2.imshow('Demo', frame)
         if cv2.waitKey(1) == ord('q'):
             break
 
