@@ -9,6 +9,7 @@ cap = cv2.VideoCapture(0)
 MAX_FPS = cap.get(cv2.CAP_PROP_FPS)
 
 fps = 10
+
 passed = float(0)
 prev = time.time()
 
@@ -27,6 +28,7 @@ while(True):
             text = "Eyes 404"
 
         cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+        cv2.putText(frame, gaze.direction(), (90, 130), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
         frame = gaze.annotated_frame()
 
 
@@ -38,8 +40,6 @@ while(True):
         prev = t
     t = time.time()
     passed = t - prev
-    print(passed)
-
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()

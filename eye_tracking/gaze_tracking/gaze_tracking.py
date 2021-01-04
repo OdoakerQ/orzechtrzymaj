@@ -107,6 +107,16 @@ class GazeTracking(object):
         if self.pupils_located:
             return self.horizontal_ratio() >= 0.65
 
+    def is_down(self):
+        """Returns true if the user is looking down"""
+        if self.pupils_located:
+            return self.vertical_ratio() >= 0.65
+
+    def is_up(self):
+        """Returns true if the user is looking up"""
+        if self.pupils_located:
+            return self.horizontal_ratio() <= 0.35
+
     def is_center(self):
         """Returns true if the user is looking to the center"""
         if self.pupils_located:
@@ -138,3 +148,20 @@ class GazeTracking(object):
         Calibrate gaze_tracking
         """
         self.calibration = Calibration()
+
+    def direction(self) -> str:
+        """
+        Returns in which direction person is looking, if eyes not detected return None
+        """
+        if self.is_center():
+            return "center"
+        elif self.is_right():
+            return "right"
+        elif self.is_left():
+            return "left"
+        elif self.is_down():
+            return "down"
+        elif self.is_up():
+            return "up"
+        else:
+            return "None"
